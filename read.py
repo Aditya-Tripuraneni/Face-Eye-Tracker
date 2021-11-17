@@ -1,7 +1,5 @@
 import cv2 as cv
 
-# img = cv.imread("Photos/Interstellar.jpg")
-# cv.imshow("Interstellar", img)
 
 # Reading videos
 capture = cv.VideoCapture(0)
@@ -22,7 +20,7 @@ while True:
         cv.putText(frame, "Eyes", (ex , ey), fontFace= cv.FONT_HERSHEY_SIMPLEX, fontScale=1, color=(0,255,0),thickness=1 )
 
 
-    cv.imshow("test", frame)
+    cv.imshow("Window", frame)
     if cv.waitKey(1) & 0xFF == ord('d'):
         print("Breaking...")
         break
